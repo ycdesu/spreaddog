@@ -217,16 +217,15 @@ func NewExchangeSessionFromConfig(name string, sessionConfig *ExchangeSession) (
 
 	var exchange types.Exchange
 
-	if sessionConfig.Key != "" && sessionConfig.Secret != "" {
-		if !sessionConfig.PublicOnly {
-			if len(sessionConfig.Key) == 0 || len(sessionConfig.Secret) == 0 {
-				return nil, fmt.Errorf("can not create exchange %s: empty key or secret", exchangeName)
-			}
-		}
+	if sessionConfig.PublicOnly {
 
-		exchange, err = cmdutil.NewExchangeStandard(exchangeName, sessionConfig.Key, sessionConfig.Secret, sessionConfig.SubAccount)
+		exchange, err = cmdutil.NewExchangeStandard(exchangeName, "", "", sessionConfig.SubAccount)
 	} else {
-		exchange, err = cmdutil.NewExchangeWithEnvVarPrefix(exchangeName, sessionConfig.EnvVarPrefix)
+		if sessionConfig.Key != "" && sessionConfig.Secret != "" {
+			exchange, err = cmdutil.NewExchangeStandard(exchangeName, sessionConfig.Key, sessionConfig.Secret, sessionConfig.SubAccount)
+		} else {
+			exchange, err = cmdutil.NewExchangeWithEnvVarPrefix(exchangeName, sessionConfig.EnvVarPrefix)
+		}
 	}
 
 	if err != nil {
@@ -257,6 +256,9 @@ func NewExchangeSessionFromConfig(name string, sessionConfig *ExchangeSession) (
 	session.Margin = sessionConfig.Margin
 	session.IsolatedMargin = sessionConfig.IsolatedMargin
 	session.IsolatedMarginSymbol = sessionConfig.IsolatedMarginSymbol
+	if session.PublicOnly {
+		session.Stream.SetPublicOnly()
+	}
 	return session, nil
 }
 
@@ -482,8 +484,6 @@ func (environ *Environment) Connect(ctx context.Context) error {
 		var logger = log.WithField("session", n)
 
 		if len(session.Subscriptions) == 0 {
-			logger.Warnf("exchange session %s has no subscriptions, skipping", session.Name)
-			continue
 		} else {
 			// add the subscribe requests to the stream
 			for _, s := range session.Subscriptions {
@@ -546,18 +546,7 @@ func (environ *Environment) SyncSession(ctx context.Context, session *ExchangeSe
 }
 
 func (environ *Environment) syncSession(ctx context.Context, session *ExchangeSession, defaultSymbols ...string) error {
-	if err := session.Init(ctx, environ); err != nil {
-		return err
-	}
-
-	symbols, err := getSessionSymbols(session, defaultSymbols...)
-	if err != nil {
-		return err
-	}
-
-	log.Infof("syncing symbols %v from session %s", symbols, session.Name)
-
-	return environ.SyncService.SyncSessionSymbols(ctx, session.Exchange, environ.syncStartTime, symbols...)
+	return nil
 }
 
 func getSessionSymbols(session *ExchangeSession, defaultSymbols ...string) ([]string, error) {

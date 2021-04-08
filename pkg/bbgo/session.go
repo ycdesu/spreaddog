@@ -220,18 +220,6 @@ func (session *ExchangeSession) Init(ctx context.Context, environ *Environment) 
 		session.markets = markets
 	}
 
-	// query and initialize the balances
-	log.Infof("querying balances from session %s...", session.Name)
-	balances, err := session.Exchange.QueryAccountBalances(ctx)
-	if err != nil {
-		return err
-	}
-
-	log.Infof("%s account", session.Name)
-	balances.Print()
-
-	session.Account.UpdateBalances(balances)
-
 	var orderExecutor = &ExchangeOrderExecutor{
 		// copy the notification system so that we can route
 		Notifiability: session.Notifiability,
@@ -369,7 +357,7 @@ func (session *ExchangeSession) InitSymbol(ctx context.Context, environ *Environ
 	var lastPriceTime time.Time
 	for interval := range usedKLineIntervals {
 		// avoid querying the last unclosed kline
-		endTime := environ.startTime.Add(- interval.Duration())
+		endTime := environ.startTime.Add(-interval.Duration())
 		kLines, err := session.Exchange.QueryKLines(ctx, symbol, interval, types.KLineQueryOptions{
 			EndTime: &endTime,
 			Limit:   1000, // indicators need at least 100
@@ -504,7 +492,7 @@ func (session *ExchangeSession) FormatOrder(order types.SubmitOrder) (types.Subm
 }
 
 func (session *ExchangeSession) UpdatePrices(ctx context.Context) (err error) {
-	if session.lastPriceUpdatedAt.After(time.Now().Add(- time.Hour)) {
+	if session.lastPriceUpdatedAt.After(time.Now().Add(-time.Hour)) {
 		return nil
 	}
 

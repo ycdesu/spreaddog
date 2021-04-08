@@ -297,7 +297,8 @@ func (b *MutexOrderBook) Update(update OrderBook) {
 	defer b.Unlock()
 
 	b.OrderBook.update(update)
-	b.EmitUpdate(b.OrderBook)
+	copied := b.OrderBook.Copy()
+	b.EmitUpdate(&copied)
 }
 
 // StreamOrderBook receives streaming data from websocket connection and
