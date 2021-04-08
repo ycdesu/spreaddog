@@ -7,7 +7,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/c9s/bbgo/pkg/fixedpoint"
+	"github.com/ycdesu/spreaddog/pkg/fixedpoint"
 )
 
 type Balance struct {

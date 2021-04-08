@@ -18,14 +18,14 @@ import (
 	"github.com/spf13/viper"
 	"gopkg.in/tucnak/telebot.v2"
 
-	"github.com/c9s/bbgo/pkg/accounting/pnl"
-	"github.com/c9s/bbgo/pkg/cmd/cmdutil"
-	"github.com/c9s/bbgo/pkg/notifier/slacknotifier"
-	"github.com/c9s/bbgo/pkg/notifier/telegramnotifier"
-	"github.com/c9s/bbgo/pkg/service"
-	"github.com/c9s/bbgo/pkg/slack/slacklog"
-	"github.com/c9s/bbgo/pkg/types"
-	"github.com/c9s/bbgo/pkg/util"
+	"github.com/ycdesu/spreaddog/pkg/accounting/pnl"
+	"github.com/ycdesu/spreaddog/pkg/cmd/cmdutil"
+	"github.com/ycdesu/spreaddog/pkg/notifier/slacknotifier"
+	"github.com/ycdesu/spreaddog/pkg/notifier/telegramnotifier"
+	"github.com/ycdesu/spreaddog/pkg/service"
+	"github.com/ycdesu/spreaddog/pkg/slack/slacklog"
+	"github.com/ycdesu/spreaddog/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/util"
 )
 
 var LoadedExchangeStrategies = make(map[string]SingleExchangeStrategy)

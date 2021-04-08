@@ -5,7 +5,7 @@ import (
 
 	"github.com/robfig/cron/v3"
 
-	"github.com/c9s/bbgo/pkg/accounting/pnl"
+	"github.com/ycdesu/spreaddog/pkg/accounting/pnl"
 )
 
 type PnLReporter interface {

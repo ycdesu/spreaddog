@@ -7,8 +7,8 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/slack-go/slack"
 
-	"github.com/c9s/bbgo/pkg/slack/slackstyle"
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/slack/slackstyle"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 type AverageCostPnlReport struct {

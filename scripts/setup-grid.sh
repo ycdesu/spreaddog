@@ -25,7 +25,7 @@ function info()
 }
 
 info "downloading..."
-curl -O -L https://github.com/c9s/bbgo/releases/download/$version/$dist_file
+curl -O -L https://github.com/ycdesu/spreaddogreleases/download/$version/$dist_file
 tar xzf $dist_file
 mv bbgo-$osf bbgo
 chmod +x bbgo

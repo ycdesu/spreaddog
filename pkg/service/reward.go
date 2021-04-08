@@ -10,9 +10,9 @@ import (
 	"github.com/jmoiron/sqlx"
 	"github.com/sirupsen/logrus"
 
-	"github.com/c9s/bbgo/pkg/exchange/batch"
-	"github.com/c9s/bbgo/pkg/fixedpoint"
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/exchange/batch"
+	"github.com/ycdesu/spreaddog/pkg/fixedpoint"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 // RewardService collects the reward records from the exchange,

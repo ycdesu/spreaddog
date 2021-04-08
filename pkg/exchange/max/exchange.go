@@ -14,11 +14,11 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/time/rate"
 
-	"github.com/c9s/bbgo/pkg/datatype"
-	maxapi "github.com/c9s/bbgo/pkg/exchange/max/maxapi"
-	"github.com/c9s/bbgo/pkg/fixedpoint"
-	"github.com/c9s/bbgo/pkg/types"
-	"github.com/c9s/bbgo/pkg/util"
+	"github.com/ycdesu/spreaddog/pkg/datatype"
+	maxapi "github.com/ycdesu/spreaddog/pkg/exchange/max/maxapi"
+	"github.com/ycdesu/spreaddog/pkg/fixedpoint"
+	"github.com/ycdesu/spreaddog/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/util"
 )
 
 var closedOrderQueryLimiter = rate.NewLimiter(rate.Every(6*time.Second), 1)

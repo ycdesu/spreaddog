@@ -4,7 +4,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 // generated from:

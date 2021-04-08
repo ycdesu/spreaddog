@@ -1,8 +1,8 @@
 // +heroku install ./cmd/bbgo
 
-module github.com/c9s/bbgo
+module github.com/ycdesu/spreaddog
 
-go 1.13
+go 1.16
 
 require (
 	github.com/DATA-DOG/go-sqlmock v1.5.0

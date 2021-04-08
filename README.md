@@ -57,7 +57,7 @@ bash <(curl -s https://raw.githubusercontent.com/c9s/bbgo/main/scripts/setup-gri
 Install the bbgo command:
 
 ```sh
-go get -u github.com/c9s/bbgo/cmd/bbgo
+go get -u github.com/ycdesu/spreaddogcmd/bbgo
 ```
 
 Add your dotenv file:
@@ -249,7 +249,7 @@ Define a strategy struct:
 package newstrategy
 
 import (
-	"github.com/c9s/bbgo/pkg/fixedpoint"
+	"github.com/ycdesu/spreaddog/pkg/fixedpoint"
 )
 
 type Strategy struct {
@@ -298,17 +298,17 @@ package cmd
 
 // import built-in strategies
 import (
-	_ "github.com/c9s/bbgo/pkg/strategy/bollgrid"
-	_ "github.com/c9s/bbgo/pkg/strategy/buyandhold"
-	_ "github.com/c9s/bbgo/pkg/strategy/flashcrash"
-	_ "github.com/c9s/bbgo/pkg/strategy/grid"
-	_ "github.com/c9s/bbgo/pkg/strategy/mirrormaker"
-	_ "github.com/c9s/bbgo/pkg/strategy/pricealert"
-	_ "github.com/c9s/bbgo/pkg/strategy/support"
-	_ "github.com/c9s/bbgo/pkg/strategy/swing"
-	_ "github.com/c9s/bbgo/pkg/strategy/trailingstop"
-	_ "github.com/c9s/bbgo/pkg/strategy/xmaker"
-	_ "github.com/c9s/bbgo/pkg/strategy/xpuremaker"
+	_ "github.com/ycdesu/spreaddog/pkg/strategy/bollgrid"
+	_ "github.com/ycdesu/spreaddog/pkg/strategy/buyandhold"
+	_ "github.com/ycdesu/spreaddog/pkg/strategy/flashcrash"
+	_ "github.com/ycdesu/spreaddog/pkg/strategy/grid"
+	_ "github.com/ycdesu/spreaddog/pkg/strategy/mirrormaker"
+	_ "github.com/ycdesu/spreaddog/pkg/strategy/pricealert"
+	_ "github.com/ycdesu/spreaddog/pkg/strategy/support"
+	_ "github.com/ycdesu/spreaddog/pkg/strategy/swing"
+	_ "github.com/ycdesu/spreaddog/pkg/strategy/trailingstop"
+	_ "github.com/ycdesu/spreaddog/pkg/strategy/xmaker"
+	_ "github.com/ycdesu/spreaddog/pkg/strategy/xpuremaker"
 )
 ```
 
@@ -327,7 +327,7 @@ Write your own strategy in the strategy file:
 vim strategy.go
 ```
 
-You can grab the skeleton strategy from <https://github.com/c9s/bbgo/blob/main/pkg/strategy/skeleton/strategy.go>
+You can grab the skeleton strategy from <https://github.com/ycdesu/spreaddogblob/main/pkg/strategy/skeleton/strategy.go>
 
 Now add your config:
 

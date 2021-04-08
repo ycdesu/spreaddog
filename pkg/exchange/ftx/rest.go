@@ -15,7 +15,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/c9s/bbgo/pkg/util"
+	"github.com/ycdesu/spreaddog/pkg/util"
 )
 
 type restRequest struct {

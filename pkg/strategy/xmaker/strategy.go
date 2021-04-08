@@ -9,11 +9,11 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/c9s/bbgo/pkg/bbgo"
-	"github.com/c9s/bbgo/pkg/exchange/max"
-	"github.com/c9s/bbgo/pkg/fixedpoint"
-	"github.com/c9s/bbgo/pkg/service"
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/bbgo"
+	"github.com/ycdesu/spreaddog/pkg/exchange/max"
+	"github.com/ycdesu/spreaddog/pkg/fixedpoint"
+	"github.com/ycdesu/spreaddog/pkg/service"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 var defaultMargin = fixedpoint.NewFromFloat(0.01)

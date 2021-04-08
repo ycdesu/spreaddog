@@ -22,8 +22,8 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 
-	"github.com/c9s/bbgo/pkg/util"
-	"github.com/c9s/bbgo/pkg/version"
+	"github.com/ycdesu/spreaddog/pkg/util"
+	"github.com/ycdesu/spreaddog/pkg/version"
 )
 
 const (

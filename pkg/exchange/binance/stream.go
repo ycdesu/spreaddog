@@ -13,9 +13,9 @@ import (
 	"github.com/adshao/go-binance/v2"
 	"github.com/gorilla/websocket"
 
-	"github.com/c9s/bbgo/pkg/fixedpoint"
+	"github.com/ycdesu/spreaddog/pkg/fixedpoint"
 
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 var debugBinanceDepth bool

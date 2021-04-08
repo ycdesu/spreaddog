@@ -9,8 +9,8 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	batch2 "github.com/c9s/bbgo/pkg/exchange/batch"
-	"github.com/c9s/bbgo/pkg/types"
+	batch2 "github.com/ycdesu/spreaddog/pkg/exchange/batch"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 type BacktestService struct {

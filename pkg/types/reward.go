@@ -3,8 +3,8 @@ package types
 import (
 	"time"
 
-	"github.com/c9s/bbgo/pkg/datatype"
-	"github.com/c9s/bbgo/pkg/fixedpoint"
+	"github.com/ycdesu/spreaddog/pkg/datatype"
+	"github.com/ycdesu/spreaddog/pkg/fixedpoint"
 )
 
 type RewardType string

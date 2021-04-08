@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/c9s/bbgo/pkg/datatype"
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/datatype"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 func Test_messageHandler_handleMessage(t *testing.T) {

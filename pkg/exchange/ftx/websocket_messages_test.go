@@ -9,8 +9,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/c9s/bbgo/pkg/fixedpoint"
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/fixedpoint"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 func Test_rawResponse_toSubscribedResp(t *testing.T) {

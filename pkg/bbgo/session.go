@@ -9,10 +9,10 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 
-	"github.com/c9s/bbgo/pkg/indicator"
-	"github.com/c9s/bbgo/pkg/service"
-	"github.com/c9s/bbgo/pkg/types"
-	"github.com/c9s/bbgo/pkg/util"
+	"github.com/ycdesu/spreaddog/pkg/indicator"
+	"github.com/ycdesu/spreaddog/pkg/service"
+	"github.com/ycdesu/spreaddog/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/util"
 )
 
 type StandardIndicatorSet struct {

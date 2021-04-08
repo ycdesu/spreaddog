@@ -5,8 +5,8 @@ import (
 
 	"github.com/spf13/viper"
 
-	"github.com/c9s/bbgo/pkg/exchange/ftx"
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/exchange/ftx"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 func inBaseAsset(balances types.BalanceMap, market types.Market, price float64) float64 {

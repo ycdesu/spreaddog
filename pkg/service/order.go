@@ -10,8 +10,8 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/c9s/bbgo/pkg/exchange/batch"
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/exchange/batch"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 type OrderService struct {

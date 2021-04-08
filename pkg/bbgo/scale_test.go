@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/c9s/bbgo/pkg/fixedpoint"
+	"github.com/ycdesu/spreaddog/pkg/fixedpoint"
 )
 
 func TestExponentialScale(t *testing.T) {

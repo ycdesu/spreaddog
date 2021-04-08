@@ -1,6 +1,6 @@
 package bbgo
 
-import "github.com/c9s/bbgo/pkg/types"
+import "github.com/ycdesu/spreaddog/pkg/types"
 
 // MarketDataStore receives and maintain the public market data
 //go:generate callbackgen -type MarketDataStore

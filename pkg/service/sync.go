@@ -5,7 +5,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 var ErrNotImplemented = errors.New("not implemented")

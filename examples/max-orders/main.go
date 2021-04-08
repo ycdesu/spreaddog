@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	maxapi "github.com/c9s/bbgo/pkg/exchange/max/maxapi"
+	maxapi "github.com/ycdesu/spreaddog/pkg/exchange/max/maxapi"
 )
 
 func main() {

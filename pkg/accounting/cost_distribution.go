@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 func zero(a float64) bool {

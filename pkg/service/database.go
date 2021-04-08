@@ -7,8 +7,8 @@ import (
 	"github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
 
-	mysqlMigrations "github.com/c9s/bbgo/pkg/migrations/mysql"
-	sqlite3Migrations "github.com/c9s/bbgo/pkg/migrations/sqlite3"
+	mysqlMigrations "github.com/ycdesu/spreaddog/pkg/migrations/mysql"
+	sqlite3Migrations "github.com/ycdesu/spreaddog/pkg/migrations/sqlite3"
 )
 
 type DatabaseService struct {

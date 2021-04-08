@@ -7,7 +7,7 @@ if [[ -n $1 ]] ; then
 fi
 
 echo "downloading bbgo $version"
-curl -L -o bbgo https://github.com/c9s/bbgo/releases/download/$version/bbgo-$osf
+curl -L -o bbgo https://github.com/ycdesu/spreaddogreleases/download/$version/bbgo-$osf
 chmod +x bbgo
 
 echo "bbgo is downloaded at ./bbgo"

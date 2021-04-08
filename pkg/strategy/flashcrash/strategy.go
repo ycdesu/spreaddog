@@ -8,9 +8,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/c9s/bbgo/pkg/bbgo"
-	"github.com/c9s/bbgo/pkg/indicator"
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/bbgo"
+	"github.com/ycdesu/spreaddog/pkg/indicator"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 const ID = "flashcrash"

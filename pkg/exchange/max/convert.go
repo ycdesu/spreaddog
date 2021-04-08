@@ -8,11 +8,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/c9s/bbgo/pkg/datatype"
-	"github.com/c9s/bbgo/pkg/exchange/max/maxapi"
-	"github.com/c9s/bbgo/pkg/fixedpoint"
-	"github.com/c9s/bbgo/pkg/types"
-	"github.com/c9s/bbgo/pkg/util"
+	"github.com/ycdesu/spreaddog/pkg/datatype"
+	"github.com/ycdesu/spreaddog/pkg/exchange/max/maxapi"
+	"github.com/ycdesu/spreaddog/pkg/fixedpoint"
+	"github.com/ycdesu/spreaddog/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/util"
 )
 
 func toGlobalCurrency(currency string) string {

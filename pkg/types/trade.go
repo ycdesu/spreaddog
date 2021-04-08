@@ -7,8 +7,8 @@ import (
 
 	"github.com/slack-go/slack"
 
-	"github.com/c9s/bbgo/pkg/datatype"
-	"github.com/c9s/bbgo/pkg/util"
+	"github.com/ycdesu/spreaddog/pkg/datatype"
+	"github.com/ycdesu/spreaddog/pkg/util"
 )
 
 func init() {

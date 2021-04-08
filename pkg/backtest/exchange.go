@@ -7,11 +7,11 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/c9s/bbgo/pkg/bbgo"
-	"github.com/c9s/bbgo/pkg/exchange/binance"
-	"github.com/c9s/bbgo/pkg/exchange/max"
-	"github.com/c9s/bbgo/pkg/service"
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/bbgo"
+	"github.com/ycdesu/spreaddog/pkg/exchange/binance"
+	"github.com/ycdesu/spreaddog/pkg/exchange/max"
+	"github.com/ycdesu/spreaddog/pkg/service"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 var ErrUnimplemented = errors.New("unimplemented method")

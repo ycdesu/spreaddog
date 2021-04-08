@@ -8,8 +8,8 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/c9s/bbgo/pkg/service"
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/service"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 const endpoint = "wss://ftx.com/ws/"

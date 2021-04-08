@@ -3,7 +3,7 @@ package telegramnotifier
 import (
 	"fmt"
 
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 type Notifier struct {

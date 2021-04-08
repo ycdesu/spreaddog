@@ -3,7 +3,7 @@ package bbgo
 import (
 	"fmt"
 
-	"github.com/c9s/bbgo/pkg/service"
+	"github.com/ycdesu/spreaddog/pkg/service"
 )
 
 type PersistenceSelector struct {

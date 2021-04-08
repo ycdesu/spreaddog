@@ -8,11 +8,11 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/c9s/bbgo/pkg/datatype"
-	max "github.com/c9s/bbgo/pkg/exchange/max/maxapi"
-	"github.com/c9s/bbgo/pkg/fixedpoint"
-	"github.com/c9s/bbgo/pkg/types"
-	"github.com/c9s/bbgo/pkg/util"
+	"github.com/ycdesu/spreaddog/pkg/datatype"
+	max "github.com/ycdesu/spreaddog/pkg/exchange/max/maxapi"
+	"github.com/ycdesu/spreaddog/pkg/fixedpoint"
+	"github.com/ycdesu/spreaddog/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/util"
 )
 
 var logger = log.WithField("exchange", "max")

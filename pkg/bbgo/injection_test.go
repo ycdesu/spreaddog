@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/c9s/bbgo/pkg/service"
+	"github.com/ycdesu/spreaddog/pkg/service"
 )
 
 func Test_injectField(t *testing.T) {

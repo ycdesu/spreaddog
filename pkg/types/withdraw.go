@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/c9s/bbgo/pkg/datatype"
+	"github.com/ycdesu/spreaddog/pkg/datatype"
 )
 
 type Withdraw struct {

@@ -6,7 +6,7 @@ import (
 	log "github.com/sirupsen/logrus"
 	"gonum.org/v1/gonum/stat"
 
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 /*

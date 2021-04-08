@@ -5,10 +5,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/c9s/bbgo/pkg/exchange/binance"
-	"github.com/c9s/bbgo/pkg/exchange/ftx"
-	"github.com/c9s/bbgo/pkg/exchange/max"
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/exchange/binance"
+	"github.com/ycdesu/spreaddog/pkg/exchange/ftx"
+	"github.com/ycdesu/spreaddog/pkg/exchange/max"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 func NewExchangeStandard(n types.ExchangeName, key, secret, subAccount string) (types.Exchange, error) {

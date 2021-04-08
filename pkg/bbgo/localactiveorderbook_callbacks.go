@@ -3,7 +3,7 @@
 package bbgo
 
 import (
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 func (b *LocalActiveOrderBook) OnFilled(cb func(o types.Order)) {

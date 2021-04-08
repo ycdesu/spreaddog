@@ -3,7 +3,7 @@
 package backtest
 
 import (
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 func (m *SimplePriceMatching) OnTradeUpdate(cb func(trade types.Trade)) {

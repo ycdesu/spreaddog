@@ -4,7 +4,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/c9s/bbgo/pkg/types"
+	"github.com/ycdesu/spreaddog/pkg/types"
 )
 
 //ex: 2019-03-05T09:56:55.728933+00:00

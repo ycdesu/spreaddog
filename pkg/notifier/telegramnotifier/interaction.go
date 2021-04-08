@@ -8,7 +8,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"gopkg.in/tucnak/telebot.v2"
 
-	"github.com/c9s/bbgo/pkg/service"
+	"github.com/ycdesu/spreaddog/pkg/service"
 )
 
 var log = logrus.WithField("service", "telegram")

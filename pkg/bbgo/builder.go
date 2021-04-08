@@ -18,8 +18,8 @@ import (
 var wrapperTemplate = template.Must(template.New("main").Parse(`package main
 // DO NOT MODIFY THIS FILE. THIS FILE IS GENERATED FOR IMPORTING STRATEGIES
 import (
-	"github.com/c9s/bbgo/pkg/bbgo"
-	"github.com/c9s/bbgo/pkg/cmd"
+	"github.com/ycdesu/spreaddog/pkg/bbgo"
+	"github.com/ycdesu/spreaddog/pkg/cmd"
 
 {{- range .Imports }}
 	_ "{{ . }}"

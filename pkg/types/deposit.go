@@ -3,7 +3,7 @@ package types
 import (
 	"time"
 
-	"github.com/c9s/bbgo/pkg/datatype"
+	"github.com/ycdesu/spreaddog/pkg/datatype"
 )
 
 type DepositStatus string

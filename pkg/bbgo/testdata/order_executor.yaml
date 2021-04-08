@@ -1,6 +1,6 @@
 ---
 imports:
-- github.com/c9s/bbgo/pkg/strategy/buyandhold
+- github.com/ycdesu/spreaddog/pkg/strategy/buyandhold
 
 sessions:
   max:
