@@ -1,0 +1,59 @@
+---
+sessions:
+  ftx:
+    exchange: ftx
+    envVarPrefix: ftx
+    publicOnly: true
+
+  max:
+    exchange: max
+    envVarPrefix: max
+    publicOnly: true
+
+  binance:
+    exchange: binance
+    envVarPrefix: binance
+    publicOnly: true
+
+notifications:
+  slack:
+    # will send keep alive message to the channel every 8 hours
+    defaultChannel: "general"
+
+crossExchangeStrategies:
+  # The spread definition: TargetExchangePrice / SourceExchangePrice
+  - spreadmonitor:
+      - sourceExchange: binance
+        # taker fee in the exchange, such as 0.0000023
+        sourceExchangeTakerFee: 0
+        # ask or bid
+        sourceExchangeSide: bid
+        # MUST follows the naming rule of an exchange. For example, FTX uses `/` to separate base and quote unit, so we should
+        # use `LTC/USDT` in ftx but `LTCUSDT` in max and binance.
+        sourceExchangeMarket: LTCUSDT
+
+        targetExchange: ftx
+        targetExchangeTakerFee: 0
+        targetExchangeSide: ask
+        targetExchangeMarket: LTC/USD
+
+        # the string will be in the beginning of the alert
+        upperLimitMessage: LTC/USD spread of binance > ftx
+        # An alert will be sent if the spread is above the upper limit.
+        spreadUpperLimitBps: 10
+        # support `s` for second, `m` for minute and `h` for hour.
+        # An alert will be emitted if the spread is greater than `spreadUpperLimitBps` for `aboveLimitDuration`.
+        # In this example, if the current spread is 20 bps for 1 hour, an alert will be emitted.
+        aboveLimitDuration: 1h
+
+        lowerLimitMessage: LTC/USD spread of binance < ftx
+        # You will receive a notification if the spread is less than or equal to `spreadLowerLimitBps` for `belowLimitDuration`.
+        spreadLowerLimitBps: 2
+        belowLimitDuration: 10s
+
+        slackChannelName: test
+
+        # Within the quietDuration, you will only receive ONE above limit alert and ONE below limit alert.
+        # Let's say the `quietDuration` is 1h. When you receive an lower limit alert at 3pm,
+        # you will not receive another one until 4pm.
+        quietDuration: 1h

@@ -2,8 +2,6 @@
 
 package types
 
-import ()
-
 func (stream *StandardStream) OnStart(cb func()) {
 	stream.startCallbacks = append(stream.startCallbacks, cb)
 }
